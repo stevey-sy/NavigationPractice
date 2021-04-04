@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firdgeFragment">
+
+    <fragment
+        android:id="@+id/firdgeFragment"
+        android:name="com.example.navigationpractice.FirdgeFragment"
+        android:label="fragment_firdge"
+        tools:layout="@layout/fragment_firdge" >
+        <action
+            android:id="@+id/action_firdgeFragment_to_addItemFragement"
+            app:destination="@id/addItemFragement" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragement"
+        android:name="com.example.navigationpractice.AddItemFragement"
+        android:label="fragment_add_item_fragement"
+        tools:layout="@layout/fragment_add_item_fragement" />
+</navigation>
